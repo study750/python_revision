@@ -19,3 +19,5 @@ print(list)
 print(len(list))
 print("banana" in list) 
 
+
+

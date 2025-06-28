@@ -1,0 +1,47 @@
+--------------------------------------data types 
+
+list -- append ,insert ,remove ,pop , sort , len , in
+dict -- dict[""]="" , pop , in
+set -- add ,remove , in
+tuples -- len , in
+
+----------------------------------------range 
+always have 3 attribues
+
+--------------------------------------------------sorting in list
+
+pairs = [(1, 9), (3, 4), (2, 5)]
+
+pairs.sort(key=lambda x:x[1]%x[0])                   key will always take function
+print(pairs)
+
+[(1, 9), (2, 5), (3, 4)]
+
+
+--------------------------------------------------- multiple return 
+
+def stats(a, b):
+    return a + b, a * b
+
+s, m = stats(3, 4)
+print(s, m)
+
+
+-------------------------------------  file handling
+opening -- with open () as f
+reading -- f. read() or 
+            for line in f : 
+               print(line.strip())
+
+writeing -- with open() as f:
+                f.write()  or f.writelines(list)
+
+Use with for safe, auto-closing files — you already did, perfect
+
+Always add \n if you want new lines during writes
+
+Use .strip() when reading to clean unwanted extra spaces or line breaks
+
+You can mix read+write with "r+" if needed
+
+------------------------------------------------------------------------

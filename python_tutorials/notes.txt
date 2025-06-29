@@ -44,4 +44,8 @@ Use .strip() when reading to clean unwanted extra spaces or line breaks
 
 You can mix read+write with "r+" if needed
 
-------------------------------------------------------------------------
+---------------------------------------------------------------- exception 
+
+finally should be used in try catch .. if u opening file .. clsoe it there .. like that kind of stuff
+
+stack multiple exception on each another for single try block

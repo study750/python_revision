@@ -41,6 +41,16 @@ class ll:
         
         return count
 
+    def remove_by_value(self,data):
+        if(self.head==None) :
+           print("no value presern")
+           return
+        
+        itr=self.head
+        while(itr.next.data!=data):
+            itr=itr.next
+
+        itr.next=itr.next.next            
     
 
     def insert_at_any(self, data, index):
@@ -84,6 +94,8 @@ l.insert_at_end(2)
 l.insert_at_any(3,2)
 l.insert_at_any(1.5,1)
 print(l.Len())
+print(l.Print())
+l.remove_by_value(1.5)
 print(l.Print())
 
 

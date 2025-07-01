@@ -1,6 +1,6 @@
 --------------------------------------data types 
 
-list -- append ,insert ,remove ,pop , sort , len , in
+list -- append() ,insert() ,remove() ,return value .... pop() , .sort , len() , in
 dict -- dict[""]="" , pop , in
 set -- add ,remove , in
 tuples -- len , in

@@ -49,3 +49,45 @@ You can mix read+write with "r+" if needed
 finally should be used in try catch .. if u opening file .. clsoe it there .. like that kind of stuff
 
 stack multiple exception on each another for single try block
+
+
+raise will throw exception but we neeed to catch it somehow =-=====
+def vote(age):
+    if age < 18:
+        raise ValueError("Not eligible to vote")
+    else:
+        print("Eligible to vote")
+
+try:
+    vote(16)
+except ValueError as e:
+    print(e)
+
+--------------------------------------------custom exception 
+
+class UnderAgeError(Exception):
+    def __init__(self, age):
+        super().__init__(f"Age {age} is too young to marry!")
+
+def marry(age):
+    if age < 21:
+        raise UnderAgeError(age)                  .... just raising no printing is doone here
+    else: 
+        print("Marriage allowed")
+
+try:
+    marry(18)
+except UnderAgeError as e:
+    print(e)
+
+
+
+
+----------------------------------------------------------------oop
+super should be used to access parents methods .. without super then there should be unique names for methods of child and parent
+
+if u are using parents mehtod 2 ways
+super().has()
+newvehicle.has(self)                ... use self in parameter
+
+

@@ -91,3 +91,17 @@ super().has()
 newvehicle.has(self)                ... use self in parameter
 
 
+-----------------------------------------------------list comprehension 
+list = [what to put  ... for i in list .. condition]
+
+
+-----------------------------------------------------initializing set and dict
+
+dict={}
+set = set()
+
+
+-----------------------------------------------------
+multiprocessing is like invisible link .. whatever inside it .. will vanish as process end ... even the global variable
+
+

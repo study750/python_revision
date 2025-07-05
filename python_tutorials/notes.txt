@@ -101,7 +101,24 @@ dict={}
 set = set()
 
 
------------------------------------------------------
+----------------------------------------------------- multithreading and multiprocessing
+thread1= threading.Thread(target=call1,args=(msg1,))
+                            function      arguments
+
+                            
 multiprocessing is like invisible link .. whatever inside it .. will vanish as process end ... even the global variable
 
 
+
+----------------------------------------------------------------argument parsing
+import argparse
+
+create object of it -- 
+parser = argparse.ArgumentParser(description="Demo of argparse")
+
+add args 
+parser.add_argument('--name', type=str, help='Your name')
+
+args =parser.parse_args()
+
+print(args.name)

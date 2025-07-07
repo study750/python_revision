@@ -1,5 +1,5 @@
 a='bhus'
-b=3
+b=300
 c=True
 d=3.134
 print(type(a))
@@ -16,3 +16,12 @@ print(d)
 #          name of class   default   content
 # class Sword:
     #sharpness = 100
+
+
+#variable is just a reference to memory 
+# a=14
+# b=1
+# a is b .. both referencing same memeo
+
+e=b
+print(e is b)

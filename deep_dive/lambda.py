@@ -25,6 +25,7 @@ square = lambda x:x*2
 print(square(5))
 
 nums=[1,2,3,4,5,6]
+nums.sort(key = lambda x:len(x))
 even=list(filter(lambda x : x%2==0 , nums))
 sqs=list(map(lambda x : x**x) , nums)
 result = list(map(lambda x: x ** 2, filter(lambda x: x % 2 == 0, nums)))

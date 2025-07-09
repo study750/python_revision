@@ -16,7 +16,7 @@ print(a())
 
 
 def outer(cnt):
-    b=5
+    b=5   
     def inner():
         nonlocal cnt
         cnt+=1
@@ -24,9 +24,22 @@ def outer(cnt):
     print(b)
     return inner
     
-a = outer(5)
+a = outer(5)    
+print(a()) 
 print(a())
 print(a())
-print(a())
+
+
+
+
+
+def outer():
+    name = "Jon Snow"  # outer is done .. but still inner remembers that b=5 .. after 
+    def inner():
+        print("Hello", name)
+    return inner
+
+a=outer("jon nsow")
+a()             
 
 # 5678
